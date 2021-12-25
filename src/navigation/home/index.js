@@ -4,11 +4,13 @@ import HomeScreen from '../../screens/home'
 import ProfileScreen from '../../screens/profile'
 import SearchScreen from '../../screens/search'
 import UploadScreen from '../../screens/upload'
+
 import {
   MaterialCommunityIcons,
   AntDesign,
   Feather,
   FontAwesome,
+  Fontisto,
 } from '@expo/vector-icons'
 import { StyleSheet, TouchableOpacity, View, Text } from 'react-native'
 
@@ -36,27 +38,36 @@ const HomeNavigator = () => {
       <Tab.Screen
         name="Home"
         component={HomeScreen}
-        options={{
+        options={({ navigation }) => ({
           headerTitle: 'Bestagram',
           headerRight: () => {
             return (
-              <TouchableOpacity style={styles.headerRightView}>
+              <TouchableOpacity
+                style={styles.headerRightView}
+                onPress={() => navigation.navigate('Messages')}
+              >
                 <View style={styles.sendList}>
                   <Text style={styles.sendListText}>25</Text>
                 </View>
-                <Feather name="send" color={'#000000'} size={35} />
+                <Fontisto
+                  style={styles.chat}
+                  name="messenger"
+                  color={'#000000'}
+                  size={30}
+                />
               </TouchableOpacity>
             )
           },
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
-        }}
+        })}
       />
       <Tab.Screen
         name="Search"
         component={SearchScreen}
         options={{
+          headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="search1" color={color} size={size} />
           ),
@@ -112,6 +123,9 @@ const styles = StyleSheet.create({
   sendListText: {
     color: '#fff',
     fontWeight: '600',
+  },
+  chat: {
+    marginRight: 8,
   },
 })
 

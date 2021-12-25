@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderWidth: 1,
     borderRadius: 5,
-    marginTop: 40,
+    marginTop: 100,
   },
   profile: {
     borderBottomWidth: 1,
