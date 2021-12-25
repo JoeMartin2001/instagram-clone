@@ -1,6 +1,7 @@
 import React from 'react'
-import { View, Text, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TextInput, StyleSheet, Image } from 'react-native'
 import { EvilIcons } from '@expo/vector-icons'
+import Images from '../../fakedatta/images'
 
 const SearchScreen = () => {
   return (
@@ -14,9 +15,10 @@ const SearchScreen = () => {
 const styles = StyleSheet.create({
   searchinput: {
     borderColor: 'rgb(79, 122, 160)',
-    borderWidth: 1,
+
     flexDirection: 'row',
   },
+
   input: {},
 })
 

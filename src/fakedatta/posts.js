@@ -8,8 +8,8 @@ export const FakePosts = [
   },
   {
     id: 2,
-    name: 'Azamjon',
-    title: 'Alimov',
+    name: 'Azimjon',
+    title: 'Botirov',
     uri:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB3UpIf-0esrULCTuwtK_nVQt84JUXjmxmgw&usqp=CAU',
   },
