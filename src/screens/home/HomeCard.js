@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   TextInput: {
-    marginLeft: 10,
+    marginHorizontal: 10,
   },
 })
 
