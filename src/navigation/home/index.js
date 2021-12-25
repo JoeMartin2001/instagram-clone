@@ -10,7 +10,7 @@ import {
   Feather,
   FontAwesome,
 } from '@expo/vector-icons'
-import { StyleSheet, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, TouchableOpacity, View, Text } from 'react-native'
 
 const Tab = createBottomTabNavigator()
 
@@ -41,7 +41,10 @@ const HomeNavigator = () => {
           headerRight: () => {
             return (
               <TouchableOpacity style={styles.headerRightView}>
-                <Feather name="send" color={'#000000'} size={25} />
+                <View style={styles.sendList}>
+                  <Text style={styles.sendListText}>25</Text>
+                </View>
+                <Feather name="send" color={'#000000'} size={35} />
               </TouchableOpacity>
             )
           },
@@ -93,6 +96,22 @@ const HomeNavigator = () => {
 const styles = StyleSheet.create({
   headerRightView: {
     marginRight: 10,
+  },
+  sendList: {
+    backgroundColor: 'red',
+    position: 'absolute',
+    left: 20,
+    bottom: 18,
+    width: 25,
+    height: 18,
+    borderRadius: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 100,
+  },
+  sendListText: {
+    color: '#fff',
+    fontWeight: '600',
   },
 })
 

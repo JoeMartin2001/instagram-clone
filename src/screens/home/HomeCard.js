@@ -1,14 +1,22 @@
 import React from 'react'
-import { View, Text, StyleSheet, TextInput, Image } from 'react-native'
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  Image,
+  TouchableOpacity,
+} from 'react-native'
 import { FontAwesome, AntDesign, EvilIcons, Feather } from '@expo/vector-icons'
 
-const HomeCard = () => {
+const HomeCard = (props) => {
+  console.log(props)
   return (
     <View style={styles.main}>
       <View style={styles.profile}>
         <FontAwesome name="user-circle-o" color={'#000000'} size={35} />
 
-        <Text style={styles.username}>Name of User</Text>
+        <Text style={styles.username}>{props.post.name}</Text>
       </View>
 
       <View style={styles.media}>
@@ -23,16 +31,27 @@ const HomeCard = () => {
       </View>
 
       <View style={styles.orders}>
-        <AntDesign name="hearto" color={'#000000'} size={30} />
-        <EvilIcons name="comment" color={'#00000'} size={40} />
-        <Feather name="send" color={'#00000'} size={30} />
+        <TouchableOpacity>
+          <AntDesign name="hearto" color={'#000000'} size={30} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <EvilIcons name="comment" color={'#00000'} size={40} />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Feather name="send" color={'#00000'} size={30} />
+        </TouchableOpacity>
 
         <View style={styles.chosen}>
-          <Feather name="bookmark" color={'#00000'} size={30} />
+          <TouchableOpacity>
+            <Feather name="bookmark" color={'#00000'} size={30} />
+          </TouchableOpacity>
         </View>
       </View>
+
       <View style={styles.commentuser}>
-        <FontAwesome name="user-circle-o" color={'#000000'} size={25} />
+        <TouchableOpacity>
+          <FontAwesome name="user-circle-o" color={'#000000'} size={25} />
+        </TouchableOpacity>
         <TextInput style={styles.TextInput} placeholder="Add comment..." />
       </View>
     </View>
