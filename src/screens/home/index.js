@@ -11,7 +11,6 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.main}>
-      <Text>Home - Komron</Text>
       <HomeCard />
     </View>
   )
