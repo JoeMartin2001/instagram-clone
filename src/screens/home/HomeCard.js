@@ -36,7 +36,7 @@ const HomeCard = () => {
             source={{
               uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB3UpIf-0esrULCTuwtK_nVQt84JUXjmxmgw&usqp=CAU',
             }}
-            resizeMode='cover'
+            resizeMode="cover"
           />
         </View>
       </TouchableOpacity>
@@ -44,18 +44,18 @@ const HomeCard = () => {
       <View style={styles.cardBottomView}>
         <View style={styles.cardBottomLeftView}>
           <TouchableOpacity style={styles.cardBottomLeftItemTouchable}>
-            <AntDesign name='hearto' color={'#000000'} size={25} />
+            <AntDesign name="hearto" color={'#000000'} size={25} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.cardBottomLeftItemTouchable}>
-            <EvilIcons name='comment' color={'#000000'} size={35} />
+            <EvilIcons name="comment" color={'#000000'} size={35} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.cardBottomLeftItemTouchable}>
-            <Feather name='send' color={'#000000'} size={25} />
+            <Feather name="send" color={'#000000'} size={25} />
           </TouchableOpacity>
         </View>
 
         <TouchableOpacity>
-          <Feather name='bookmark' color={'#000000'} size={30} />
+          <Feather name="bookmark" color={'#000000'} size={30} />
         </TouchableOpacity>
       </View>
 
@@ -146,30 +146,6 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
-<<<<<<< HEAD
 });
 
 export default HomeCard;
-=======
-  orders: {
-    padding: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-    height: 60,
-  },
-  chosen: {
-    marginLeft: 210,
-  },
-  commentuser: {
-    padding: 10,
-    marginTop: 20,
-    paddingTop: 10,
-    flexDirection: 'row',
-  },
-  TextInput: {
-    marginLeft: 10,
-  },
-})
-
-export default HomeCard
->>>>>>> 54c48b46e92d80772bea2108392faf1ae8961dc4
