@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   main: {
     backgroundColor: '#ffffff',
     flex: 1,
+    paddingHorizontal: '5%',
   },
   img: {
     width: 50,

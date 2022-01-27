@@ -146,6 +146,30 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
+<<<<<<< HEAD
 });
 
 export default HomeCard;
+=======
+  orders: {
+    padding: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    height: 60,
+  },
+  chosen: {
+    marginLeft: 210,
+  },
+  commentuser: {
+    padding: 10,
+    marginTop: 20,
+    paddingTop: 10,
+    flexDirection: 'row',
+  },
+  TextInput: {
+    marginLeft: 10,
+  },
+})
+
+export default HomeCard
+>>>>>>> 54c48b46e92d80772bea2108392faf1ae8961dc4
