@@ -1,0 +1,14 @@
+{
+  "or": "yoki",
+  "chooseyourlang": "TILINGIZNI TANLANING",
+  "password": "Parol",
+  "email": "Elektron pochta",
+  "login": "Kirish",
+  "createnewaccount": "Yangi hisob yarating",
+  "russian": "Rus",
+  "english": "Ingliz",
+  "uzbek": "O'zbek",
+  "required": "Elektron pochta majburiy maydondir",
+  "validemail": "Yaroqli elektron pochta boʻlishi kerak",
+  "validpassword": "Password must be at least 6 characters"
+}

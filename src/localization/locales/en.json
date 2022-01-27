@@ -1,0 +1,14 @@
+{
+  "or": "or",
+  "chooseyourlang": "SELECT YOUR LANGUAGE",
+  "password": "Password",
+  "email": "Email",
+  "login": "Log In",
+  "createnewaccount": "Create a new account",
+  "russian": "Russian",
+  "english": "English",
+  "uzbek": "Uzbek",
+  "required": "Email is a required field",
+  "validemail": "Must be a valid email",
+  "validpassword": "Password must be at least 6 characters"
+}

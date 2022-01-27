@@ -7,20 +7,22 @@ import HomeNavigator from './home';
 const Stack = createNativeStackNavigator();
 
 const RootNavigator = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName='HomeNavigator'
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name='HomeNavigator' component={HomeNavigator} />
-        <Stack.Screen name='Feed' component={FeedScreen} />
-        <Stack.Screen name='Login' component={LoginScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  return <LoginScreen />;
 };
 
 export default RootNavigator;
+
+{
+  /* <NavigationContainer>
+<Stack.Navigator
+  initialRouteName='HomeNavigator'
+  screenOptions={{
+    headerShown: false,
+  }}
+>
+  <Stack.Screen name='HomeNavigator' component={HomeNavigator} />
+  <Stack.Screen name='Feed' component={FeedScreen} />
+  <Stack.Screen name='Login' component={LoginScreen} />
+</Stack.Navigator>
+</NavigationContainer> */
+}
